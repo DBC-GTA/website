@@ -112,6 +112,11 @@
     gap: 14px;
   }
 
+   .photo-grid a:hover img {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+  }
+
   .photo-grid img {
     width: 100%;
     height: 220px;
@@ -225,11 +230,19 @@
     <section>
       <h2>Project photos</h2>
       <p class="small">This website is currently under construciton more project photos coming soon.</p>
-      <div class="photo-grid">
-        <img src="https://lh3.googleusercontent.com/d/1rlc5ZuU8KmRTB6WXkVjvi7rpQxkLcHeu" alt="Deck example 1" />
-        <img src="https://lh3.googleusercontent.com/d/1OzKTUB8fETNBpjq02H83VcGD6PLxN-M4" alt="Deck example 2" />
-        <img src="https://lh3.googleusercontent.com/d/1XeBNzQiJKWJZZoXLL5j64D6rZ4SNxUMF" alt="Deck example 3" />
-      </div>
+<div class="photo-grid">
+  <a href="https://lh3.googleusercontent.com/d/1rlc5ZuU8KmRTB6WXkVjvi7rpQxkLcHeu" target="_blank" rel="noopener noreferrer">
+    <img src="https://lh3.googleusercontent.com/d/1rlc5ZuU8KmRTB6WXkVjvi7rpQxkLcHeu" alt="Deck example 1" />
+  </a>
+
+  <a href="https://lh3.googleusercontent.com/d/1OzKTUB8fETNBpjq02H83VcGD6PLxN-M4" target="_blank" rel="noopener noreferrer">
+    <img src="https://lh3.googleusercontent.com/d/1OzKTUB8fETNBpjq02H83VcGD6PLxN-M4" alt="Deck example 2" />
+  </a>
+
+  <!-- <a href="https://lh3.googleusercontent.com/d/1XeBNzQiJKWJZZoXLL5j64D6rZ4SNxUMF" target="_blank" rel="noopener noreferrer"> -->
+    <img src="https://lh3.googleusercontent.com/d/1XeBNzQiJKWJZZoXLL5j64D6rZ4SNxUMF" alt="Deck example 3" />
+  </a>
+</div>
     </section>
 
     <section id="contact">
