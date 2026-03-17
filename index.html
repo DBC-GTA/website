@@ -5,156 +5,172 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>David Baron Construction</title>
   <meta name="description" content="David Baron Construction builds custom backyard decks in Toronto and the GTA." />
-  <style>
-    :root {
-      --bg: #f3f3f3;
-      --panel: #ffffff;
-      --text: #131313;
-      --muted: #555555;
-      --line: #d8dce6;
-      --accent: #1f3b90;
-      --accent-dark: #162b68;
-      --accent-light: #4f65a8;
-    }
+ <style>
+  :root {
+    --bg: #f3f3f3;
+    --panel: #ffffff;
+    --text: #131313;
+    --muted: #555555;
+    --line: #d8dce6;
+    --accent: #1f3b90;
+    --accent-dark: #162b68;
+    --accent-light: #4f65a8;
+  }
 
-    * { box-sizing: border-box; }
+  * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
 
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 24px;
-    }
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+  }
 
-    header {
-      background: linear-gradient(rgba(12, 22, 52, 0.64), rgba(12, 22, 52, 0.64)),
-        url('https://lh3.googleusercontent.com/d/1VkllRgK48RyG5OvLLCcgHLxxV_PNriTr') center/cover;
-      color: white;
-      border-bottom: 4px solid var(--accent);
-    }
+  header {
+    background: linear-gradient(rgba(12, 22, 52, 0.64), rgba(12, 22, 52, 0.64)),
+      url('https://lh3.googleusercontent.com/d/1VkllRgK48RyG5OvLLCcgHLxxV_PNriTr') center/cover;
+    color: white;
+    border-bottom: 4px solid var(--accent);
+  }
 
-    .hero {
-      padding: 88px 24px 72px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
+  .hero {
+    padding: 88px 24px 72px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      margin: 0 0 12px;
-      line-height: 1.05;
-    }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 0 0 12px;
+    line-height: 1.05;
+  }
 
-    .subhead {
-      font-size: 1.1rem;
-      max-width: 640px;
-      color: #f3f6ff;
-      margin-bottom: 24px;
-    }
+  .subhead {
+    font-size: 1.1rem;
+    max-width: 640px;
+    color: #f3f6ff;
+    margin-bottom: 24px;
+  }
 
-    .button {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
+  .button {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 2px solid var(--accent);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
 
-    .button:hover { background: var(--accent-dark); }
+  section {
+    margin: 28px 0;
+    background: var(--panel);
+    border: 2px solid var(--line);
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(20, 29, 56, 0.05);
+  }
 
-    section {
-      margin: 28px 0;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 24px;
-    }
+  h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+    margin-bottom: 18px;
+  }
 
-    h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
+  .card {
+    border: 2px solid var(--line);
+    border-radius: 6px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 4px 14px rgba(31, 59, 144, 0.06);
+  }
 
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 16px;
-      background: white;
-      box-shadow: 0 4px 14px rgba(31, 59, 144, 0.06);
-    }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
 
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-    }
+  .photo-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--line);
+    background: #eef1f8;
+  }
 
-    .photo-grid img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: #eef1f8;
-    }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
 
-    ul {
-      padding-left: 20px;
-      margin-bottom: 0;
-    }
+  .contact-box {
+    background: #eef2fb;
+    border: 2px solid var(--accent-light);
+    border-radius: 6px;
+    padding: 18px;
+  }
 
-    .contact-box {
-      background: #eef2fb;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 18px;
-    }
+  .small {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
 
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    padding: 36px 24px 48px;
+    border-top: 6px solid var(--accent);
+    background: #eef2fb;
+    margin-top: 24px;
+  }
 
-    footer {
-      text-align: center;
-      color: var(--muted);
-      padding: 18px 24px 40px;
-    }
+  h2,
+  h3,
+  a {
+    color: var(--accent);
+  }
 
-    h2,
-    h3,
-    a {
-      color: var(--accent);
-    }
+  a:hover {
+    color: var(--accent-dark);
+  }
 
-    a:hover {
-      color: var(--accent-dark);
-    }
+  .button:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: white;
+  }
 
-    strong {
-      color: var(--text);
-    }
+  strong {
+    color: var(--text);
+  }
 
-    @media (max-width: 640px) {
-      .hero { padding: 64px 24px 56px; }
-      section { padding: 18px; }
-    }
-  </style>
+  @media (max-width: 640px) {
+    .hero { padding: 64px 24px 56px; }
+    section { padding: 18px; }
+  }
+</style>
 </head>
 <body>
  <header>
